@@ -1,7 +1,7 @@
 import Cocoa
 
-class Solution {
-    func longestCommonPrefix(_ strs: [String]) -> String {
+enum Solution {
+    static func longestCommonPrefix(_ strs: [String]) -> String {
         guard strs.count > 0 else {
             return ""
         }
@@ -29,9 +29,7 @@ class Solution {
     }
 }
 
-let solution = Solution()
-
-print(solution.longestCommonPrefix([String]()))
-print(solution.longestCommonPrefix(["Sphynx"]))
-print(solution.longestCommonPrefix(["Sphynx", "Sphblack", "Sphquartz", "Sphjudge"]))
+print(Solution.longestCommonPrefix([String]()))
+print(Solution.longestCommonPrefix(["Sphynx"]))
+print(Solution.longestCommonPrefix(["Sphynx", "Sphblack", "Sphquartz", "Sphjudge"]))
 //: [Next](@next)
